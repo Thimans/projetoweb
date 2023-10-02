@@ -1,0 +1,166 @@
+.header {
+    text-align: center;
+}
+
+.dil {
+    text-align: center;
+}
+
+.dil li {
+    display: inline;
+    /* Para manter os itens da lista na mesma linha */
+    margin-right: 20px;
+    /* Espaçamento entre os itens da lista */
+}
+
+#descricao,
+#imagens,
+#links {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #0074D9, #001f3f);
+
+    color: #fff;
+    /* Cor do texto */
+}
+
+/* Estilo para os itens do menu de navegação */
+.dil li {
+    display: inline;
+    /* Para manter os itens na mesma linha */
+    margin-right: 150px;
+    /* Espaçamento entre os itens */
+}
+
+/* Estilo para os links de navegação */
+.dil li a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #fff;
+    /* Cor do texto dos links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 18px;
+    /* Tamanho da fonte dos links */
+    transition: color 0.3s;
+    /* Adiciona uma transição de cor suave */
+}
+
+/* Estilizar os links de navegação quando o mouse passar por cima */
+.dil li a:hover {
+    color: #0074D9;
+    /* Cor do texto ao passar o mouse por cima */
+}
+
+/* Estilo para os links de navegação */
+.dil li a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #fff;
+    /* Cor do texto dos links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 18px;
+    /* Tamanho da fonte dos links */
+    transition: color 0.3s;
+    /* Adiciona uma transição de cor suave */
+    padding: 5px 15px;
+    /* Espaçamento interno para melhorar a usabilidade */
+    border-radius: 5px;
+    /* Borda arredondada nos links */
+    background-color: #0074D9;
+    /* Cor de fundo dos links */
+}
+
+/* Estilizar os links de navegação quando o mouse passar por cima */
+.dil li a:hover {
+    background-color: #001f3f;
+    /* Cor de fundo dos links ao passar o mouse por cima */
+    color: #fff;
+    /* Cor do texto ao passar o mouse por cima */
+}
+
+/* Estilo para os links de navegação */
+.dil li a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #fff;
+    /* Cor do texto dos links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    font-size: 18px;
+    /* Tamanho da fonte dos links */
+    transition: color 0.3s;
+    /* Adiciona uma transição de cor suave */
+    padding: 5px 15px;
+    /* Espaçamento interno para melhorar a usabilidade */
+    border-radius: 5px;
+    /* Borda arredondada nos links */
+    background-color: #0074D9;
+    /* Cor de fundo dos links */
+}
+
+/* Estilizar os links de navegação quando o mouse passar por cima */
+.dil li a:hover {
+    background-color: #001f3f;
+    /* Cor de fundo dos links ao passar o mouse por cima */
+    color: #fff;
+    /* Cor do texto ao passar o mouse por cima */
+}
+
+/* Estilo para os links dentro da seção de descrição */
+#descricao a {
+    text-decoration: underline;
+    /* Adicione sublinhado aos links */
+    color: #0074D9;
+    /* Cor do texto dos links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+}
+
+/* Estilizar os links dentro da seção de descrição quando o mouse passar por cima */
+#descricao a:hover {
+    color: #001f3f;
+    /* Cor do texto ao passar o mouse por cima */
+}
+
+.linkul li a {
+    text-decoration: underline;
+    /* Adicione sublinhado aos links */
+    color: #0074D9;
+    /* Cor do texto dos links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+}
+
+/* Estilo para o footer */
+footer {
+    text-align: center;
+    /* Centralizar o texto no rodapé */
+    background-color: #001f3f;
+    /* Cor de fundo do rodapé */
+    color: #fff;
+    /* Cor do texto no rodapé */
+    padding: 10px 0;
+    /* Espaçamento interno no rodapé */
+    font-size: 16px;
+    /* Tamanho da fonte no rodapé */
+}
+
+/* Estilizar o link no rodapé quando o mouse passar por cima */
+footer a:hover {
+    text-decoration: underline;
+    /* Adicione sublinhado aos links no rodapé */
+}
+
+/* Estilo para as imagens dentro da seção de imagens */
+.img {
+    width: 30%;
+    display: inline;
+    /* Para manter os itens da lista na mesma linha */
+    margin-right: 20px;
+    /* Espaçamento entre os itens da lista */
+
+}
