@@ -13,8 +13,10 @@
     /* Espaçamento entre os itens da lista */
 }
 
-#descricao,
-#imagens,
+.img1{
+    height: 400px;
+    width:390px;
+}
 #links {
     text-align: center;
 }
