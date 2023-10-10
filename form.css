@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: #0074D9;
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ h1 {
 }
 
 form {
-    background-color: #fff;
+    background-color: #ffffff;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -27,7 +27,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
