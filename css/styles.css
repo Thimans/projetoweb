@@ -19,6 +19,7 @@
 }
 #links {
     text-align: center;
+    text-decoration: none;
 }
 
 body {
@@ -128,13 +129,16 @@ body {
     /* Cor do texto ao passar o mouse por cima */
 }
 
-.linkul li a {
-    text-decoration: underline;
+.linkul {
+    align-items: center;
+    text-decoration:none;
     /* Adicione sublinhado aos links */
+
     color: #0074D9;
     /* Cor do texto dos links */
     font-weight: bold;
     /* Deixa o texto em negrito */
+    text-decoration:underline;
 }
 
 /* Estilo para o footer */
