@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Formulário</title>
+</head>
+<body>
+    <h1>Dados do Formulário Recebidos</h1>
+    <ul id="lista-dados">
+        <!-- Os dados preenchidos serão exibidos aqui -->
+    </ul>
+
+    <script>
+        window.onload = function() {
+            const listaDados = document.getElementById('lista-dados');
+
+            // Recuperando os dados do localStorage
+            const nome = localStorage.getItem('nome');
+            const email = localStorage.getItem('email');
+            const sexo = localStorage.getItem('sexo');
+            const assunto = localStorage.getItem('assunto');
+            const mensagem = localStorage.getItem('mensagem');
+            const dataEnvio = localStorage.getItem('dataEnvio');
+
+            // Exibindo os dados na página
+            const dados = {
+                'Nome': nome,
+                'E-mail': email,
+                'Sexo': sexo,
+                'Assunto': assunto,
+                'Mensagem': mensagem,
+                'Data de Envio': dataEnvio
+            };
+            for (const chave in dados) {
+                if (dados[chave]) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${chave}: ${dados[chave]}`;
+                    listaDados.appendChild(listItem);
+                }
+            }
+
+      
+     
+        };
+    </script>
+</body>
+</html>
