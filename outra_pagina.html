@@ -11,6 +11,8 @@
         <!-- Os dados preenchidos serão exibidos aqui -->
     </ul>
 
+    <button type="button" onclick="excluirTodosDados()">Excluir Todos os Dados</button>
+
     <script>
         window.onload = function() {
             const listaDados = document.getElementById('lista-dados');
@@ -39,10 +41,22 @@
                     listaDados.appendChild(listItem);
                 }
             }
-
-      
-     
         };
+
+        function excluirTodosDados() {
+            localStorage.removeItem('nome');
+            localStorage.removeItem('email');
+            localStorage.removeItem('sexo');
+            localStorage.removeItem('assunto');
+            localStorage.removeItem('mensagem');
+            localStorage.removeItem('dataEnvio');
+
+            // Limpar a lista na página
+            const listaDados = document.getElementById('lista-dados');
+            while (listaDados.firstChild) {
+                listaDados.removeChild(listaDados.firstChild);
+            }
+        }
     </script>
 </body>
 </html>
