@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/dados.css" rel="stylesheet" >
+    
+    <title>Dados do Formulário</title>
+</head>
+<body>
+    <h1>Dados do Formulário Recebidos</h1>
+
+    <!-- Adicione um campo de pesquisa -->
+    <label for="pesquisa">Pesquisar:</label>
+    <input type="text" id="pesquisa" oninput="pesquisarDados()">
+    <button type="button" onclick="excluirTodosDados()">Excluir Todos os Dados</button>
+    <button type="button" onclick="close()" class="b8 ">Fechar</button>
+   
+    <div class="lis">
+        <ul id="lista-dados">
+            <!-- Os dados preenchidos serão exibidos aqui -->
+        </ul>
+    </div>
+    <div class="geral">
+        <button type="button" onclick="excluirDado('nome')" class="b1">🗑️</button>
+        <button type="button" onclick="excluirDado('email')" class="b2">🗑️</button>
+        <button type="button" onclick="excluirDado('sexo')" class="b3">🗑️</button>
+        <button type="button" onclick="excluirDado('assunto')" class="b4">🗑️</button>
+        <button type="button" onclick="excluirDado('mensagem')" class="b5">🗑️</button>
+        <button type="button" onclick="excluirDado('dataEnvio')" class="b6">🗑️</button>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
+
