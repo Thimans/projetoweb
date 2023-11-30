@@ -7,16 +7,23 @@
 </head>
 <body>
     <h1>Dados do Formulário Recebidos</h1>
+
+    <!-- Adicione um campo de pesquisa -->
+    <label for="pesquisa">Pesquisar:</label>
+    <input type="text" id="pesquisa" oninput="pesquisarDados()">
+    <button type="button" onclick="excluirTodosDados()">Excluir Todos os Dados</button>
+
     <ul id="lista-dados">
         <!-- Os dados preenchidos serão exibidos aqui -->
     </ul>
 
-    <button type="button" onclick="excluirTodosDados()">Excluir Todos os Dados</button>
-
     <script>
         window.onload = function() {
-            const listaDados = document.getElementById('lista-dados');
+            exibirDados();
+        };
 
+        function exibirDados() {
+            const listaDados = document.getElementById('lista-dados');
             // Recuperando os dados do localStorage
             const nome = localStorage.getItem('nome');
             const email = localStorage.getItem('email');
@@ -34,6 +41,9 @@
                 'Mensagem': mensagem,
                 'Data de Envio': dataEnvio
             };
+
+            listaDados.innerHTML = ''; // Limpar a lista
+
             for (const chave in dados) {
                 if (dados[chave]) {
                     const listItem = document.createElement('li');
@@ -41,7 +51,7 @@
                     listaDados.appendChild(listItem);
                 }
             }
-        };
+        }
 
         function excluirTodosDados() {
             localStorage.removeItem('nome');
@@ -51,12 +61,28 @@
             localStorage.removeItem('mensagem');
             localStorage.removeItem('dataEnvio');
 
-            // Limpar a lista na página
+            exibirDados(); // Atualizar a exibição após a exclusão
+        }
+
+        // Função para pesquisar dados
+        function pesquisarDados() {
+            const termoPesquisa = document.getElementById('pesquisa').value.toLowerCase();
             const listaDados = document.getElementById('lista-dados');
-            while (listaDados.firstChild) {
-                listaDados.removeChild(listaDados.firstChild);
-            }
+
+            // Filtrar dados com base no termo de pesquisa
+            const itensFiltrados = Array.from(listaDados.children).filter(item => {
+                return item.textContent.toLowerCase().includes(termoPesquisa);
+            });
+
+            // Limpar a lista
+            listaDados.innerHTML = '';
+
+            // Adicionar os itens filtrados de volta à lista
+            itensFiltrados.forEach(item => {
+                listaDados.appendChild(item);
+            });
         }
     </script>
 </body>
 </html>
+
