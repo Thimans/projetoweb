@@ -41,7 +41,9 @@ function excluirDado(chave) {
 
     // Atualizar a lista
     exibirDados();
-}
+      
+        }
+
 
 function excluirTodosDados() {
     localStorage.removeItem('nome');
@@ -77,6 +79,8 @@ function close() {
 }
 // Função para pesquisar dados
 function pesquisarDados() {
+  
+    
     const termoPesquisa = document.getElementById('pesquisa').value.toLowerCase();
     const listaDados = document.getElementById('lista-dados');
 
@@ -92,6 +96,7 @@ function pesquisarDados() {
     itensFiltrados.forEach(item => {
         listaDados.appendChild(item);
     });
+    
 }// Função para pesquisar dados
         function pesquisarDados() {
             const termoPesquisa = document.getElementById('pesquisa').value.toLowerCase();
@@ -109,4 +114,6 @@ function pesquisarDados() {
             itensFiltrados.forEach(item => {
                 listaDados.appendChild(item);
             });
+            
+       
         }

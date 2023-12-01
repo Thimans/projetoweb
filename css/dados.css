@@ -3,20 +3,30 @@ body {
     background: #0074D9;
     margin: 0;
     padding: 0;
+    height: 700vh;
 }
 h1 {
     text-align: center;
     margin-top: 20px;
 }
+.header1{
+    align-items: center;
+    right: 30px;
+
+}
 #lista-dados {
     text-align: center;
     background-color:#fff;
-    max-width: 430px;
+    max-width: 530px;
+    min-height: 240px;
     margin: 0 auto;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
 
+
+    
 }
 .list{
     margin-bottom: 20px;
@@ -39,6 +49,7 @@ button{
 .geral{
     align-items: center;
     margin-top: -22%;
+    margin-right:80px ;
 
 }
 .b1{
@@ -48,33 +59,34 @@ button{
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left:65%;
+    margin-left:75%;
     margin-top: 10px;
     margin-bottom: 15px;
+   
 }
 .b2{
     background-color: #fff;
-    margin-left:65%;
+    margin-left:75%;
     margin-bottom: 15px;
 }
 .b3{
     background-color: #fff;
-    margin-left:65%;
+    margin-left:75%;
     margin-bottom: 15px;
 }
 .b4{
     background-color: #fff;
-    margin-left:65%;
+    margin-left:75%;
     margin-bottom: 15px;
 }
 .b5{
     background-color: #fff;
-    margin-left:65%;
+    margin-left:75%;
     margin-bottom: 15px;
 }
 .b6{
     background-color: #fff;
-    margin-left:65%;
+    margin-left:75%;
    
 }
 .b7{
